@@ -1,3 +1,8 @@
+.master {
+  width: 100%;
+  height: 100%;
+}
+
 .page-container {
   display: flex;
   height: 100%;
@@ -231,7 +236,7 @@ span#button_bold {
   padding: 0 18px;
   display: flex;
   position: absolute;
-  background-color: rgb(241, 235, 224);
+  background-color: #bdc9ed;
   top: 55px;
   flex-direction: column;
   max-height: 0;
@@ -290,7 +295,7 @@ span#button_bold {
 }
 
 .hr {
-  border: 0.5px solid #515c68;
+  border: 0.5px solid #394b7f;
   position: relative;
   margin-left: -24px;
   margin-right: -24px;
