@@ -67,7 +67,7 @@ a:hover {
 
 .divHelp:hover {
   border-bottom: 4px solid #017EFA;
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 
 li {
@@ -84,6 +84,21 @@ li {
   justify-content: center;
   margin-top: 32px;
   margin-left: -15px;
+  cursor: pointer;
+}
+
+.avatar-image {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  z-index: 4;
+  margin-left: -9px;
+}
+
+.avatar-image:hover {
+  zoom: 120%;
+  z-index: 10;
+  margin-left: -13px;
 }
 
 
@@ -251,6 +266,7 @@ span#button_bold {
   color: white;
   margin-bottom: 10px;
   font-size: 14px;
+  cursor: pointer;
 }
 .text_double_accordion {
   display: flex;
@@ -300,7 +316,7 @@ span#button_bold {
 .input_container {
   position: relative;
   padding: 0 0 0 20px;
-  width: 171px;
+  width: 182px;
   display: flex;
   align-items: center;
 }
@@ -314,7 +330,7 @@ span#button_bold {
 }
 .input_img {
   position: relative;
-  right: 128px;
+  right: 137px;
   bottom: 0.5px;
   width: 14px;
   height: 20px;
