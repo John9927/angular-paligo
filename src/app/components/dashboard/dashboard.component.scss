@@ -238,6 +238,7 @@ span#button_bold {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   margin-top: 11px;
+  z-index: 1;
 }
 
 .panel3.active {
@@ -340,7 +341,6 @@ span#button_bold {
 
 .homePage-container {
   position: absolute;
-  display: flex;
   top: 126px;
   width: 100%;
 }
@@ -353,6 +353,8 @@ span#button_bold {
   margin-left: 323px;
   justify-content: center;
   border-radius: 8px;
+  height: 40px;
+  margin-bottom: 40px;
 }
 
 .modal {
@@ -371,35 +373,38 @@ span#button_bold {
   display: flex;
   justify-content: center;
   width: 150px;
-  }
+  height: 40px;
+}
 
-  .button_modal:hover {
+.button_modal:hover {
   cursor: pointer;
-  }
+}
 
-  .button_modal:focus {
-    outline: none;
-  }
+.button_modal:focus {
+  outline: none;
+}
 
-  .button:active {
+.button:active {
   outline: none;
   border: none;
-  }
+}
 
-  .button_modal_publish {
-    padding: 10px;
-    background-color: #017EFA;
-    border: none;
-    border-radius: 6px;
-    color: #ffffff;
-    margin-top: 4px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    margin-left: 21px;
-  }
-  .button_modal_publish:focus {
-    outline: none;
-  }
+.button_modal_publish {
+  padding: 10px;
+  background-color: #017EFA;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-top: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 21px;
+  height: 40px;
+}
+
+.button_modal_publish:focus {
+  outline: none;
+}
 
