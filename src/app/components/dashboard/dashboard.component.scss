@@ -1,38 +1,37 @@
 .page-container {
   display: flex;
   height: 100%;
-  background-color: #F8F9FF;
   color: black;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
 
 .sidebar {
-  height: auto;
-  width: 15%;
+  height: 100%;
+  width: 285px;
+  display: table;
   padding: 24px;
   background: #09194C;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
 }
 
 .header {
   display: flex;
+  position: relative;
   height: 90px;
-  width: 82%;
+  width: 100%;
   background-color: #FFFFFF;
+  border-bottom: 2px solid #dadddf;
 }
 .image {
   display: flex;
   align-items: center;
-  width: 15%;
+  width: 18%;
 }
 .text_manager {
   color: #64adf7;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
-  margin-bottom: 17px;
+  margin-bottom: 23px;
+  margin-top: 30px;
 }
 
 span#header {
@@ -44,10 +43,11 @@ a {
   align-items: center;
   text-decoration: none;
   color: rgb(56, 55, 55);
-  padding: 15px;
+  margin-left: 4px;
 }
 
 a:hover {
+  margin-top: 3px;
   border-bottom: 4px solid #017EFA;
   font-weight: bold;
 }
@@ -72,23 +72,38 @@ li {
   margin-left: -15px;
 }
 
+
+
 .button {
   padding: 10px;
+  background-color: #017EFA;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-top: 4px;
+  margin-bottom: 27px;
+  cursor: pointer;
   width: 100%;
   display: flex;
   margin: auto;
   justify-content: center;
-  margin-top: 4px;
-  background-color: #017EFA;
-  color: white;
-  border-radius: 6px;
-  margin-bottom: 27px;
-  cursor: pointer;
-}
 
-button:focus {
+  }
+
+  .button:hover {
+  cursor: pointer;
+  background-color: #0660b9;
+  }
+
+  .button:focus {
+    outline: none;
+  }
+
+  .button:active {
   outline: none;
-}
+  border: none;
+  }
+
 
 span#button_bold {
   font-weight: bold;
@@ -101,10 +116,13 @@ span#button_bold {
   cursor: pointer;
   border: none;
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
   transition: 0.4s;
   display: flex;
   margin-top: 12px;
+}
+.accordion:last-child {
+  margin-bottom: 10px;
 }
 
 .accordion1 {
@@ -114,10 +132,10 @@ span#button_bold {
   cursor: pointer;
   border: none;
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
   transition: 0.4s;
   display: flex;
-  margin-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 .accordion1:after {
@@ -128,6 +146,10 @@ span#button_bold {
   justify-content: flex-end;
   margin-top: -2px;
   margin-right: 10px;
+}
+
+.accordion1:focus, .accordion:focus {
+  outline: none;
 }
 
 .help {
@@ -157,11 +179,9 @@ span#button_bold {
 .accordion1:first-child {
   margin-top: 5px;
 }
-.text:first-child {
-  margin-top: 10px;
-}
+
 .text:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .accordion1.active:after {
@@ -173,7 +193,7 @@ span#button_bold {
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 27px;
   display: flex;
   flex-direction: column;
   max-height: 0;
@@ -207,7 +227,7 @@ span#button_bold {
 }
 
 .panel2 {
-  padding: 0 18px;
+  padding: 0px 26px;
   display: flex;
   flex-direction: column;
   max-height: 0;
@@ -219,15 +239,69 @@ span#button_bold {
   display: flex;
   color: white;
   margin-bottom: 10px;
+  font-size: 14px;
 }
+.text_double_accordion {
+  display: flex;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.text_double_accordion:first-child {
+  margin-top: 17px;
+}
+
 
 .text_bottom {
   color: white;
   margin-top: 10px;
   margin-left: 15px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .hr {
   border: 1px solid #515c68;
+}
+
+.divOnline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.group-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.input_search {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.input_container {
+  position: relative;
+  padding: 0 0 0 20px;
+  width: 171px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  height: 30px;
+  margin: 0;
+  padding-left: 30px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #cccccc;
+}
+.input_img {
+  position: relative;
+  right: 128px;
+  bottom: 0.5px;
+  width: 14px;
+  height: 20px;
 }
