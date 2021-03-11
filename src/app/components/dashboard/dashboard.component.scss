@@ -12,6 +12,18 @@
   background: #09194C;
 }
 
+.right-arrow {
+  width: 16px;
+  height: 13px;
+  margin-left: 100px;
+}
+
+.div-arrow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .header {
   display: flex;
   position: relative;
@@ -50,10 +62,12 @@ a:hover {
   margin-top: 3px;
   border-bottom: 4px solid #017EFA;
   font-weight: bold;
+  margin-left: -0.5px;
 }
 
 .divHelp:hover {
   border-bottom: 4px solid #017EFA;
+  margin-top: 5px;
 }
 
 li {
@@ -81,11 +95,11 @@ li {
   border-radius: 6px;
   color: #ffffff;
   margin-top: 4px;
-  margin-bottom: 27px;
+  /* margin-bottom: 25px; */
   cursor: pointer;
   width: 100%;
   display: flex;
-  margin: auto;
+  /* margin: auto; */
   justify-content: center;
 
   }
@@ -107,6 +121,7 @@ li {
 
 span#button_bold {
   font-weight: bold;
+  font-size: 15px;
 }
 
 .accordion {
@@ -122,7 +137,7 @@ span#button_bold {
   margin-top: 12px;
 }
 .accordion:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 19px;
 }
 
 .accordion1 {
@@ -139,7 +154,6 @@ span#button_bold {
 }
 
 .accordion1:after {
-  content: "\2192";
   font-weight: bold;
   width: 100%;
   display: flex;
@@ -164,7 +178,6 @@ span#button_bold {
 }
 
 .help:after {
-  content: "\2192";
   font-weight: bold;
   width: 100%;
   margin-top: -2px;
@@ -181,14 +194,12 @@ span#button_bold {
 }
 
 .text:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 19px;
 }
 
 .accordion1.active:after {
-  content: "\2193";
 }
 .help.active:after {
-  content: "\2193";
   margin-left: 10px;
 }
 
@@ -262,7 +273,10 @@ span#button_bold {
 }
 
 .hr {
-  border: 1px solid #515c68;
+  border: 0.5px solid #515c68;
+  position: relative;
+  margin-left: -24px;
+  margin-right: -24px;
 }
 
 .divOnline {
