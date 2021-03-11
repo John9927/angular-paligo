@@ -10,6 +10,7 @@
   display: table;
   padding: 24px;
   background: #09194C;
+  z-index: 1;
 }
 
 .right-arrow {
@@ -35,7 +36,7 @@
 .image {
   display: flex;
   align-items: center;
-  width: 18%;
+  width: 16%;
 }
 .text_manager {
   color: #64adf7;
@@ -50,7 +51,7 @@ span#header {
   color: #252627;
 }
 
-a {
+.link-header {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -58,7 +59,7 @@ a {
   margin-left: 4px;
 }
 
-a:hover {
+.link-header:hover {
   margin-top: 3px;
   border-bottom: 4px solid #017EFA;
   font-weight: bold;
@@ -85,6 +86,7 @@ li {
   margin-top: 32px;
   margin-left: -15px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .avatar-image {
@@ -110,11 +112,9 @@ li {
   border-radius: 6px;
   color: #ffffff;
   margin-top: 4px;
-  /* margin-bottom: 25px; */
   cursor: pointer;
   width: 100%;
   display: flex;
-  /* margin: auto; */
   justify-content: center;
 
   }
@@ -335,3 +335,71 @@ span#button_bold {
   width: 14px;
   height: 20px;
 }
+
+// HomePage
+
+.homePage-container {
+  position: absolute;
+  display: flex;
+  top: 126px;
+  width: 100%;
+}
+
+.card__modal {
+  background: #DFEDFE;
+  display: flex;
+  padding: 10px;
+  width: 45%;
+  margin-left: 323px;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.modal {
+  font-size: 14px;
+  color: rgb(0, 162, 255);
+}
+
+.button_modal {
+  padding: 10px;
+  background-color: #6342FF;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-top: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  }
+
+  .button_modal:hover {
+  cursor: pointer;
+  }
+
+  .button_modal:focus {
+    outline: none;
+  }
+
+  .button:active {
+  outline: none;
+  border: none;
+  }
+
+  .button_modal_publish {
+    padding: 10px;
+    background-color: #017EFA;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    margin-top: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 21px;
+  }
+  .button_modal_publish:focus {
+    outline: none;
+  }
+
