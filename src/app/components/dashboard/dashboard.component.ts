@@ -39,7 +39,7 @@ export class DashboardComponent implements OnInit {
       });
     }
 
-    var acc = document.getElementsByClassName("help");
+    var acc = document.getElementsByClassName("header__label__help");
     var i;
 
     for (i = 0; i < acc.length; i++) {
