@@ -9,7 +9,7 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
   ngOnInit() {
-    var acc = document.getElementsByClassName("accordion1");
+    var acc = document.getElementsByClassName("sidebar__accordion__1");
     var i;
 
     for (i = 0; i < acc.length; i++) {
@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
       });
     }
 
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.getElementsByClassName("sidebar__accordion");
     var i;
 
     for (i = 0; i < acc.length; i++) {
